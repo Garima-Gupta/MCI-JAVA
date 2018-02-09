@@ -80,12 +80,10 @@ under the License.
    | "org.apache.maven.plugins" and "org.codehaus.mojo" if these are not already contained in the list.
    |-->
   <pluginGroups>
-   <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
     <!-- pluginGroup
      | Specifies a further group identifier to use for plugin lookup.
     <pluginGroup>com.your.plugins</pluginGroup>
     -->
-	 <pluginGroup>com.spotify</pluginGroup>
   </pluginGroups>
 
   <!-- proxies
@@ -191,19 +189,6 @@ under the License.
    |       variables for plugins in the POM.
    |
    |-->
-   
-   <profile>
-            <id>sonar</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <!-- Optional URL to server. Default value is http://localhost:9000 -->
-                <sonar.host.url>
-                  http://localhost:9000
-                </sonar.host.url>
-            </properties>
-        </profile>
   <profiles>
     <!-- profile
      | Specifies a set of introductions to the build process, to be activated using one or more of the
