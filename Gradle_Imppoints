@@ -1,1 +1,13 @@
-C:\Users\skolapar\.gradle\caches\modules-2\files-2.1
+Local repo :C:\Users\skolapar\.gradle\caches\modules-2\files-2.1
+
+To set repo authentication for gradle:
+
+repositories {
+    maven {
+        credentials {
+            username repoUser
+            password repoPassword
+        }
+        url "http://nexus........."
+    }
+}
