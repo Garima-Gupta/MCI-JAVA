@@ -11,3 +11,11 @@ repositories {
         url "http://nexus........."
     }
 }
+
+Settings.gradle file, located in the root project directory, tells Gradle which modules it should include when building your app.
+It is mainly used to build multiple projects.A business application usually does not consist of only one single project/module, but has many projects, which should be build.
+
+Gradle has the concept of a root project, which can have many sub projects. The root project is specified by a build.gradle file, like the single projects before. 
+To specify, which projects belong to the build a settings.gradle file is used.
+
+gradle init --type pom is used to convert pom to gradle build.
